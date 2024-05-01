@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ML-based crop recommandation system</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="/index.html">Crop advisor  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse float-right navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#about">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Recommand_crop.html">Crop recomendation</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+        <div class="content p-5">
+          <form action="/Recommand_crop.html" method='post'>
+            <div class="row">
+            <div class="form-group col-6">
+              <label for="Nitrogen">NITROGEN CONTENT</label>
+              <input type="text" class="form-control" id="nitrogen" name="nitrogen"  placeholder="Enter the nitrogen content of the soil">
+            </div>
+            <div class="form-group col-6">
+              <label for="Phosphorus">Phosphorus CONTENT</label>
+              <input type="text" class="form-control" id="phosphorus" name="phosphorus"  placeholder="Enter the Phosphorus content of the soil">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-6">
+              <label for="Potassium">Potassium CONTENT</label>
+              <input type="text" class="form-control" id="potassium" name="potassium"  placeholder="Enter the Potassium content of the soil">
+            </div>
+            <div class="form-group col-6">
+              <label for="Temperature">Temperature</label>
+              <input type="text" class="form-control" id="temperature" name="temperature"  placeholder="Enter the ambient temperature">
+            </div>
+            </div>
+            <div class="row">
+            <div class="form-group col-6">
+              <label for="Humidity">Humidity</label>
+              <input type="text" class="form-control" id="humidity" name="humidity"  placeholder="Enter the Humidity">
+            </div>
+            <div class="form-group col-6">
+              <label for="Ph">Ph of Soil</label>
+              <input type="text" class="form-control" id="ph" name="ph"  placeholder="Enter the Ph content in the soil">
+            </div>
+            </div>
+            <div class="row">
+            <div class="form-group col-6">
+              <label for="Rainfall">Rainfall-depth</label>
+              <input type="text" class="form-control" id="rainfall" name="rainfall"  placeholder="Enter the rainfall depth">
+            </div>
+            <div class="col-6 mt-4">
+              <h5><p class="card-text crop-name mt-3">Crop name: {{nitrovalue}}</p></h5>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block col-12">Submit</button>
+          </form>
+
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
