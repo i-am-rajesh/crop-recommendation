@@ -10,3 +10,4 @@ seaborn>=0.12.0
 pillow>=10.0.0
 jupyter>=1.0.0
 gunicorn>=20.0.0  # This ensures gunicorn is installed
+Flask>=2.0.0  # Or another stable version
