@@ -9,3 +9,4 @@ matplotlib>=3.6.0
 seaborn>=0.12.0
 pillow>=10.0.0
 jupyter>=1.0.0
+gunicorn>=20.0.0  # This ensures gunicorn is installed
